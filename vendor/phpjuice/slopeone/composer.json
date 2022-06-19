@@ -1,0 +1,50 @@
+{
+    "name": "phpjuice/slopeone",
+    "type": "library",
+    "description": "PHP implementation of the Weighted Slope One rating-based collaborative filtering scheme.",
+    "keywords": [
+        "recommendation",
+        "recommender",
+        "collaborative filtering",
+        "weighted slope one"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammed Elhaouari",
+            "email": "phpjuice@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/phpjuice/slopeone/issues",
+        "source": "https://github.com/phpjuice/slopeone"
+    },
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4",
+        "phpstan/phpstan": "^0.12",
+        "pestphp/pest": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPJuice\\Slopeone\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPJuice\\Slopeone\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "analyse": "phpstan analyse src tests",
+        "php-cs-fixer": [
+            "php-cs-fixer fix src --rules=@PSR2",
+            "php-cs-fixer fix tests --rules=@PSR2"
+        ]
+    },
+    "minimum-stability": "stable"
+}

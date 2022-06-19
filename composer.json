@@ -1,0 +1,9 @@
+{
+   
+    "require": {
+        "phpjuice/slopeone": "^2.0",
+        "tigo/recommendation": "^0.0.2",
+        "phpmailer/phpmailer": "^6.5",
+        "firebase/php-jwt": "^6.0"
+    }
+}
